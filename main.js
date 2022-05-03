@@ -3,4 +3,9 @@ let strLen = (str) => {
   return (len > 0 && len <= 10)? len : undefined;
 }
 
-module.exports = strLen;
+
+let reverseStr = (str) => {
+  return str.split("").reverse().join("");
+}
+
+module.exports = {strLen, reverseStr};

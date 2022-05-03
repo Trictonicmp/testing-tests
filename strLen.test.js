@@ -1,6 +1,6 @@
 
 //Arrrange
-const strLen = require('./main');
+const {strLen, reverseStr} = require('./main');
 
 
 //Assert
@@ -18,4 +18,11 @@ test('lenght of string 12345678910 should throw error', () => {
 
 test('length of string 1234567890 should be 10', () => {
   expect(strLen('1234567890')).toBe(10);
+});
+
+
+
+//Assert
+test('text abcd should return dcba', () => {
+  expect(reverseStr('abcd')).toBe('dcba');
 });

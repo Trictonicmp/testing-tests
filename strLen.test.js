@@ -1,6 +1,6 @@
 
 //Arrrange
-const {strLen, reverseStr} = require('./main');
+const {strLen, reverseStr, capitalize} = require('./main');
 
 
 //Assert
@@ -79,4 +79,18 @@ describe('multiply', () => {
   test('5 * 8 sould be equal to 40', () => {
     expect(calculator.multiply(5,8)).toBe(40);
   });
+});
+
+
+
+test('should return Hello How Are You', () => {
+  expect(capitalize('hello how are you')).toBe('Hello How Are You');
+});
+
+test('should return Good', () => {
+  expect(capitalize('good')).toBe('Good');
+});
+
+test('should return Before You', () => {
+  expect(capitalize('before you')).toBe('Before You');
 });
